@@ -4,10 +4,91 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
-.content {
-    font-size: $custom-font-size; //using custom variable 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+$spacer: 4rem;
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.primarycolor{
-    color: $primary; //using Bootstrap variable
+main {
+  flex: 1;
+}
+
+.margin {
+  margin-top: $spacer * 1.5;
+  margin-bottom: $spacer * 1.5;
+}
+.text {
+  :last-child {
+    margin: 0;
+  }
+}
+// .container-fluid {
+//   padding-top: 0px;
+//   padding-bottom: 0px;
+// }
+
+.home-slider-container {
+  @extend .margin;
+}
+
+.about-container {
+  @extend .margin;
+}
+
+.navbar-container {
+  .navbar-brand {
+    img {
+      max-width: 100%;
+    }
+    margin: auto;
+  }
+}
+
+.footer-container {
+  @extend .margin;
+
+  .fa {
+    font-size: 30px;
+    padding-right: $spacer/5;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+      color: $secondary;
+      transition: 0.3s;
+    }
+  }
+  .icons {
+    margin: auto;
+  }
+  .footer-text {
+    margin: auto;
+  }
+
+  .logo {
+    width: 50px;
+  }
+}
+.frames-container {
+  @extend .margin;
+  .frame-box {
+    margin: auto;
+  }
+}
+
+.contact-us-container {
+  @extend .margin;
+}
+.map {
+  height: 405px;
 }
