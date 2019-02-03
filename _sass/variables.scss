@@ -1,4 +1,6 @@
 $primary: black !default;
+$secondary:    #1abc9c !default;
+
 $white: #fff;
 $red: #dc3545;
 $body-bg: $white;
@@ -7,10 +9,11 @@ $body-color: $primary;
 /* custom vars */
 $custom-font-size: 20px;
 
+//  'Reem Kufi', sans-serif,
+//  'Raleway', sans-serif,
+//  'Source Code Pro', monospace;
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: "Source Code Pro", monospace !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;

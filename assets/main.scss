@@ -1,6 +1,7 @@
 ---
 ---
 
+@import url("https://fonts.googleapis.com/css?family=Raleway|Reem+Kufi|Source+Code+Pro");
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
@@ -24,8 +25,8 @@ main {
 }
 
 .margin {
-  margin-top: $spacer * 1.5;
-  margin-bottom: $spacer * 1.5;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
 }
 .text {
   :last-child {
@@ -91,4 +92,13 @@ main {
 }
 .map {
   height: 405px;
+}
+
+// text column container
+
+.text-column-container {
+  @extend .margin;
+}
+.map-container {
+  @extend .margin;
 }
